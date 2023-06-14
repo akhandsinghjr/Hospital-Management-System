@@ -1,5 +1,6 @@
 #include<stdio.h>  
 #include<string.h>  
+#include<stdlib.h>
 struct ad  
 {  
     char name[30];  
@@ -7,7 +8,8 @@ struct ad
     int cabin,phone,age;  
 } x[100];  
 int n,i,j=0,a=0,sum=0,g,flag,num;  
-void read();  
+int read();
+void write();  
 void add();  
 void view();  
 void search();  
@@ -36,7 +38,7 @@ int main()
                 printf("*");  
             else  
                 printf(" ");  
-        }  
+        }
         for(n=1; n<=4-m+1; n++)  
         {  
             if(n==1 ||m==1 || m==4)  
@@ -69,6 +71,7 @@ int main()
         }  
         else if(c==4)//edit  
         {  
+
             system("cls");  
             edit();  
         }  
@@ -411,7 +414,7 @@ void del()
         printf("\n\nInvalid Serial number\n");  
   
 }  
-void read()  
+int read()  
 {  
     FILE *fp = fopen("patient.txt","r");  
     if(fp == NULL)  
