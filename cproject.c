@@ -106,10 +106,10 @@ void add()
         printf("\n");  
         fflush(stdin);  
         printf("Enter patient's Name = ");  
-        fgets(x[i].name,100,stdin);  
+        fgets(x[i].name,30,stdin);  
         fflush(stdin);  
         printf("Enter disease = ");  
-        fgets(x[i].disease,100,stdin);  
+        fgets(x[i].disease,30,stdin);  
         fflush(stdin);  
         printf("Enter the age = ");  
         scanf("%d",&x[i].age);  
@@ -160,14 +160,14 @@ void edit()
             {  
                 fflush(stdin);  
                 printf("Enter the new name=");  
-                fgets(x[p].name,100,stdin);  
+                fgets(x[p].name,30,stdin);  
   
             }  
             else if(q==2)  
             {  
                 fflush(stdin);  
                 printf("Enter the new Disease=");  
-                fgets(x[p].disease,100,stdin);  
+                fgets(x[p].disease,30,stdin);  
             }  
             else if(q==3)  
             {  
