@@ -23,7 +23,7 @@ int main()
     printf("Simple Hospital Management System\n");  
     int m,n;  
 //making out the pattern  
-      
+//akhand 
     for(m=1; m<=4; m++)  
     {  
         for(n=1; n<=5; n++)  
